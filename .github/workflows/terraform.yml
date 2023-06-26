@@ -8,8 +8,8 @@ jobs:
    terraform:
     name: 'Terraform'
     env:
-      AWS_DEVOPS_ACCESSKEY : ${{secrets.AWS_DEVOPS_ACCESSKEY}}
-      AWS_DEVOPS_SECRET_KEY : ${{secrets.AWS_DEVOPS_SECRET_KEY}}
+      AWS_DEVOPS_ACCESSKEY : ${{ secrets.AWS_DEVOPS_ACCESSKEY }}
+      AWS_DEVOPS_SECRET_KEY : ${{ secrets.AWS_DEVOPS_SECRET_KEY }}
 
   runs-on: ubuntu-latest
   environment: production
