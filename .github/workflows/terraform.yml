@@ -3,10 +3,10 @@ name: 'Terraform'
 on:
   workflow_dispatch:
     inputs:
-      terraform_actions:
+      terraform_action:
         type: choice
         description: select terraform action
-        option:
+        options:
         - apply
         - destroy
         required : true
